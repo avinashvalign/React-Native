@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <View
-        style={tw`flex flex-row gap-[130px] w-[390px] h-[80px] border border-gray-500 mt-0 p-5 bg-[#F1F2EE] items-center`}
+        style={tw`flex flex-row gap-[130px] w-[390px] h-[80px] border border-gray-300 mt-0 p-5 bg-[#F1F2EE] items-center`}
       >
         <View style={tw`flex flex-row items-center gap-2`}>
           <MdMenu size={24} color="#000" />
