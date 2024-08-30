@@ -4,7 +4,7 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 const Button = ({ title, onPress, style, textStyle, borderColor }) => {
   return (
     <TouchableOpacity 
-      style={[styles.button, style, borderColor && { borderColor, borderWidth: 2 }]} 
+      style={[styles.button, style, borderColor && { borderColor, borderWidth: 1 }]} 
       onPress={onPress}
     >
       <Text style={[styles.buttonText, textStyle]}>{title}</Text>
