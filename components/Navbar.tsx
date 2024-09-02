@@ -6,12 +6,14 @@ import {
   DrawerLayoutAndroid,
   Button,
   StyleSheet,
+  Image,
 } from "react-native";
 import tw from "twrnc";
 
 import { MdMenu } from "react-icons/md";
 import { LuUser2 } from "react-icons/lu";
 import { green } from "react-native-reanimated/lib/typescript/reanimated2/Colors";
+import JTLogo from '../assets/images/jt-logo.svg'
 
 const Navbar = () => {
  
@@ -23,12 +25,16 @@ const Navbar = () => {
       >
         <View style={tw`flex flex-row items-center gap-2`}>
           <MdMenu size={24} color="#000" />
-          <Text style={tw`text-green-700 text-2xl font-bold`}>JT</Text>
+          <Image source={JTLogo} style={tw`h-6 w-8`}/>
+
+          {/* <Text style={tw`text-green-700 text-2xl font-bold`}>
+            <Image source={JTLogo}/>
+          </Text> */}
         </View>
 
         <TouchableOpacity
           style={[
-            tw`bg-[#B6ED3E] px-3 py-2 flex-row items-center`,
+            tw`bg-[#B6ED3E] px-2 py-2 flex-row items-center`,
             { borderRadius: 25, borderWidth: 2, borderColor: "#032F35" }, // Custom border radius
           ]}
         >
