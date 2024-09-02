@@ -6,6 +6,7 @@ import {
   DrawerLayoutAndroid,
   Button,
   StyleSheet,
+  Image,
 } from "react-native";
 import tw from "twrnc";
 
@@ -23,7 +24,10 @@ const Navbar = () => {
       >
         <View style={tw`flex flex-row items-center gap-2`}>
           <MdMenu size={24} color="#000" />
-          <Text style={tw`text-green-700 text-2xl font-bold`}>JT</Text>
+          {/* <Text style={tw`text-green-700 text-2xl font-bold`}>JT</Text> */}
+          <Image
+            source={require('../assets/images/jt-logo.svg')}
+          />
         </View>
 
         <TouchableOpacity
